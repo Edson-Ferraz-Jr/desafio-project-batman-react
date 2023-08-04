@@ -1,0 +1,87 @@
+.pictures-container {
+    width: 100%;
+    height: auto;
+    padding: 20px 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.picture {
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.picture:hover {
+    transform: scale(1.02);
+}
+
+.picture-1 {
+    background-image: url('https://irs.www.warnerbros.com/gallery-v2-jpeg/movies/media/ajax/fieldytvideos/und/form-jwjf-3nm0lidwwfptrjddj6fgeoxv8tbpewkmx0lro/tbm-trl2-88772.jpg');
+}
+
+.picture-2 {
+    background-image: url('https://irs.www.warnerbros.com/gallery-v2-jpeg/movies/media/ajax/fieldytvideos/und/form-jwjf-3nm0lidwwfptrjddj6fgeoxv8tbpewkmx0lro/tbm-trl2-88220r.jpg');
+}
+
+.picture-3 {
+    background-image: url('https://irs.www.warnerbros.com/gallery-v2-jpeg/movies/node/93586/edit/the_batman_rober_pattinson_production-2.jpg');
+}
+
+.picture-4 {
+    background-image: url('https://irs.www.warnerbros.com/gallery-v2-jpeg/movies/node/93586/edit/the_batman_rober_pattinson_production-3.jpg');
+}
+
+.picture-5 {
+    background-image: url('https://irs.www.warnerbros.com/gallery-v2-jpeg/movies/media/ajax/fieldytvideos/und/form-jwjf-3nm0lidwwfptrjddj6fgeoxv8tbpewkmx0lro/tbm-trl2-87418.jpg');
+}
+
+.picture-6 {
+    background-image: url('https://hbomax-images.warnermediacdn.com/2022-04/05.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com');
+}
+
+.picture-7 {
+    background-image: url('https://hbomax-images.warnermediacdn.com/2022-04/07.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com');
+}
+
+.picture-8 {
+    background-image: url('https://hbomax-images.warnermediacdn.com/2022-04/02.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com');
+}
+
+.picture-9 {
+    background-image: url('https://hbomax-images.warnermediacdn.com/2022-04/10.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com');
+}
+
+.picture-10 {
+    background-image: url('https://hbomax-images.warnermediacdn.com/2022-04/01.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com');
+}
+
+@media(min-width: 425px) {
+    .picture {
+        height: 350px;
+    }
+}
+
+@media(min-width: 768px) {
+    .pictures-container {
+        padding: 20px;
+        grid-template-columns: repeat(auto-fill, 700px);
+    }
+}
+
+@media(min-width: 1280px) {
+    .pictures-container {
+        grid-template-columns: repeat(2, minmax(600px, 800px));
+    }
+}
+
+@media(min-width: 1920px) {
+    .pictures-container {
+        grid-template-columns: repeat(auto-fill, 800px);
+    }
+}

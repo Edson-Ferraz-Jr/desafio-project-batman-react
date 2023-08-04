@@ -1,0 +1,41 @@
+header {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    width: 60%;
+    display: none;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+@media(min-width: 768px) {
+    .menu {
+        display: block;
+    }
+}
